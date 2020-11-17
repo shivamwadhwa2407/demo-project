@@ -1,3 +1,18 @@
+# Intructions 
+
+Prerequisite : Node 14.xx
+               npm 6.x
+               Angular CLI: 10.2.0
+
+> Take a Clone
+> Browse into the Directory of Code 
+> run "npm intall"
+> run "ng serve"
+
+
+
+
+
 # DemoProject
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
