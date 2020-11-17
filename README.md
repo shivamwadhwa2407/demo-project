@@ -9,6 +9,7 @@ Prerequisite : Node 14.xx
 > run "npm intall"
 > run "ng serve"
 
+# ON SUCCESSFUL LOGIN  YOU WILL BE REDIRECTED TO MY OTHER APPLICATION 'NACHO MOVIE SUGGESTOR'( https://nacho-movie-suggestor.web.app/ )
 
 
 
