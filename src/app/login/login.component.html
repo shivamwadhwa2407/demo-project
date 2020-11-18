@@ -13,6 +13,6 @@
       <small *ngIf="passwordValidateBool === false" id="passwordValidate" class="form-text">Incorrect Password</small>
     </div>
     <button type="submit" class="btn btn-primary" (click)="validateForm(email,password)"
-      [disabled]="!emailValidateBool || !passwordValidateBool ">Submit</button>
+      [disabled]="!emailValidateBool || !passwordValidateBool ">Login</button>
   </form>
 </div>

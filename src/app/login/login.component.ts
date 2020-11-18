@@ -52,11 +52,15 @@ export class LoginComponent implements OnInit {
       if (loginData["status"] == 200) {
         alert("Login Success !!")  
         window.open('https://nacho-movie-suggestor.web.app/', '_blank');
-      } if (loginData["status"] == 403) {
+      } if (loginData["status"] == 404) {
         alert("Email Not Found !!")  
-      }if (loginData["status"] == 404) {
+      }if (loginData["status"] == 403) {
         alert("Incorrect Password !!")
       }
+      this.email = undefined;
+      this.password = undefined;
+      this.emailValidateBool = undefined;
+      this.passwordValidateBool = undefined;
     }
   }
 
