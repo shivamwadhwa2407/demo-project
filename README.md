@@ -1,3 +1,19 @@
+# Intructions 
+
+Prerequisite : Node 14.xx
+               npm 6.x
+               Angular CLI: 10.2.0
+
+> Take a Clone
+> Browse into the Directory of Code 
+> run "npm intall"
+> run "ng serve"
+
+#### ON SUCCESSFUL LOGIN  YOU WILL BE REDIRECTED TO MY OTHER APPLICATION 'NACHO MOVIE SUGGESTOR'( https://nacho-movie-suggestor.web.app/ )
+
+
+
+
 # DemoProject
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
