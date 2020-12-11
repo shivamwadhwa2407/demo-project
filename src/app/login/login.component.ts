@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
 
   constructor(
+    private router: Router,
     private http: HttpClient
   ) { }
 
@@ -51,7 +52,11 @@ export class LoginComponent implements OnInit {
       let loginData = await this.login(obj)
       if (loginData["status"] == 200) {
         alert("Login Success !!")  
-        window.open('https://nacho-movie-suggestor.web.app/', '_blank');
+        // window.open('https://nacho-movie-suggestor.web.app/', '_blank');
+        // Router.navigate()
+        console.log(loginData['results']._id)
+        let url = '/todo-List/' +  loginData['results']._id.toString()
+        this.router.navigate([url])
       } if (loginData["status"] == 404) {
         alert("Email Not Found !!")  
       }if (loginData["status"] == 403) {
@@ -65,11 +70,11 @@ export class LoginComponent implements OnInit {
   }
 
   login(obj){
-    return this.http.post<any>('http://127.0.0.1:5000/login/', obj)
-                .toPromise()
-                .then(res => res)
-                .catch(err => err)
+    return this.http.post<any>('http://127.0.0.1:8082/todo-login/login/', obj)
+      .toPromise()
+      .then(res => res)
+      .catch(err => err)
 
-}
+  }
 
 }
